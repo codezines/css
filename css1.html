@@ -17,12 +17,39 @@
         #sec{
             background-color: red;
         }
+        /* here we can also use the eleents along with class and id name like p.blue or p#sec */
         .blue{
             background-color: blueviolet;
+            /* forms border to the line area  */
+            border: 2px solid blue;
+            color: rgb(239, 212, 212);
+            /* here color is the characters color */
         }
+        /* allthe tags with h1 will be in the same color */
+        h1,h2,h3{
+            /* we can give multiple tags in one tag color */
+            background-color: chartreuse;
+            border: 2px black;
+        }
+        /* we can also give color to the div part as well */
+        div{
+            background: white;
+        }
+        .priya{
+            background:black;
+            color: blanchedalmond;
+            /* here all the classes with priya will have same color */
+        }
+         *{
+         margin: 5px;
+        padding:0;
+    }
     </style>
 </head>
 <body>
+    <div>
+        <h1>Hello evreyone welcome back</h1>
+    </div>
     <div class="container">
         <!-- #sec -->
     </div>
@@ -36,5 +63,10 @@
         <div id="sec3" class="red blue border-purple">
      welcome to class of 3 
         </div>
+        <sec4 class="priya"> hello</sec4>
+        <sec4 class="priya">it is a</sec4>
+        <sec4 class="priya">same class</sec4>
+        <sec4 class="priya">but written seperately</sec4>
+
 </body>
 </html>
