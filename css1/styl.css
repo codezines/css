@@ -1,7 +1,33 @@
-        body{
-            background-color:pink;
-            
-        }
-        /* #sec{ */
-            /* background-color:red; */
-        /* } */
+#sep{
+    background-color: grey;
+}
+/*
+1 write id using # 
+2 class using .
+3 tags using tag names 
+4 border to determine box structure
+5 we can group tags h1,h2,h3,div or with any class or id we can group color them 
+6 p.red all paragraphs of red class
+7 p#red all paragraphs of red id
+8 we use  ( * ) to select whole page*/
+*{
+    background-color: aquamarine;
+    margin:0;
+}
+.nine{
+    color:blue;
+}
+h1{
+    color:blueviolet
+}
+div{
+    color:black
+}
+.roy{
+    color: black
+}
+.toy{
+    background-color: blueviolet;
+    color: white;
+    border: 3px solid purple;
+}
