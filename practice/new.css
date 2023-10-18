@@ -1,0 +1,181 @@
+/* css boilerplate-- for good website */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+#main{
+    /* width and heights make a box of given dimension */
+    width: 10%;
+    height: 10%;
+    margin-left: 50%;
+    background-color: blueviolet;
+}
+/* %--is used for a part in side the webside */
+/* px-- is a small part */
+#pxs{
+    width: 60px;
+    height: 30px;
+    margin-top: 40px ;
+    /* margin- - is used to take a gap or outside border  */
+    background-color: aqua;
+}
+#padd{
+    width: 10%;
+    height: 10%;
+    padding: 5px;
+    /* padding is the inside border of the box */
+    background-color: brown;
+}
+#img{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.freepik.com/premium-photo/landscape-with-sunset-lake-forest-anime-style_839169-25668.jpg);
+    background-size: cover;
+    /* background size -- cover (it is used to cover the whole page */
+    background-position: left;
+    /* /* backgroundposition - is used to view the position of the image if it is big in size */
+}
+/* position absolute */
+/* means it moves above or moves up level -when it moves up level the below space is covered by the back side  present boxes */
+/* in position absolute when it moves up its basically present in air so it can move anywhere even though it is present inside a big box */
+/* but if u r using position absolute and dont want to go outside the big box do position relative */
+
+/* position relative */
+/* when a box is position absolute and should be kept inside a box then it should be position relative */
+#box1{
+    position: absolute;
+    width: 160px;
+    height: 120px;
+    background-color: blue;
+}
+/* first one moves to level1 second one to level2 and third one moves to level 3 if we do position absolute in all the boxes then the last one will be on the highest level or top level */
+#box2{
+    position: absolute;
+    width: 139px;
+    height: 140px;
+    background-color: red;
+}
+#box3{
+    width: 120px;
+    height: 180px;
+    background-color:black;
+}
+#layer1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+#layer2{
+    position: absolute;
+    /* if we give top or left or right or bottom it will go out of the box with out position relative so position relatuve the layer1 to place it inside the layer1 with the margine or top or left or right or bottom */
+    top: 25px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: goldenrod;
+}
+/* FLEXBOX */
+/* normally every box follow one after another in vertical line where as flex is used to make them sideby side */
+/* WIDTH-justifycontent */
+/* HEIGHT- */
+#car{
+    display: flex;
+    justify-content: center;
+    /* start-- end  */
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+}
+#car1{
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+}
+#car2{
+    width: 50px;
+    height: 100px;
+    background-color: rebeccapurple;
+}
+#car3{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(44, 3, 3);
+}
+#p{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(84, 211, 21);
+}
+#p1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(98, 33, 217);
+}
+#p2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(226, 50, 165);
+}
+#p3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(32, 152, 216);
+}
+#r{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(84, 211, 21);
+}
+#r1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(98, 33, 217);
+}
+#r2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(226, 50, 165);
+}
+#r3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(32, 152, 216);
+}
+#i{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(84, 211, 21);
+}
+#i1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(98, 33, 217);
+}
+#i2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(226, 50, 165);
+}
+#i3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(32, 152, 216);
+}

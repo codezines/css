@@ -1,3 +1,7 @@
+/* 3 important ways to add css tag
+1. STYLE TAG   - adding <style> .....</style> tag in html 
+2. INLINE CSS  - adding style attribute in id <div id=p style=back....> which is inside the div
+3. EXTERNAL CSS - adding a link tag  to .css file*/
 #sep{
     background-color: grey;
 }
@@ -9,10 +13,12 @@
 5 we can group tags h1,h2,h3,div or with any class or id we can group color them 
 6 p.red all paragraphs of red class
 7 p#red all paragraphs of red id
-8 we use  ( * ) to select whole page*/
+8 we use  ( * ) to select whole page
+9 write style tag if u r using css coloring inside html page(otherwise it wont work)*/
 *{
     background-color: aquamarine;
     margin:0;
+    padding: 0;
 }
 .nine{
     color:blue;
