@@ -16,7 +16,7 @@
 8 we use  ( * ) to select whole page
 9 write style tag if u r using css coloring inside html page(otherwise it wont work)*/
 *{
-    background-color: aquamarine;
+    background-color: white;
     margin:0;
     padding: 0;
 }
@@ -36,4 +36,45 @@ div{
     background-color: blueviolet;
     color: white;
     border: 3px solid purple;
+}
+.heart{
+    height: 200px;
+    width: 200px;
+    background-color:red;
+    transform: rotate(45deg);
+    margin: 20%;
+    color: black;
+    position: absolute;
+    animation: heartbeat 2s infinite;
+}
+.heart::after, .heart::before{
+    content: '';
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    position: absolute;
+}
+#p{
+    color: aliceblue;
+}
+.heart::after{
+    top: -100px;
+    /* right: 0; */
+}
+.heart::before{
+    /* top: 0; */
+    left: -100px;
+}
+@keyframes heartbeat{
+    0%{
+        transform: rotate(45deg) scale(1);
+    }
+    50%{
+        transform: rotate(45deg) scale(1.2);
+    }
+    100%{
+        transform: rotate(45deg) scale(1);
+    }
 }
